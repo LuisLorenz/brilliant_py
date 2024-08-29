@@ -1,0 +1,9 @@
+
+# example str 
+example_str = "This is an example string." 
+
+# replacing format 
+    # creating a new variable to save the new str 
+changed_example_str = example_str.replace('string', 'number')
+
+print(changed_example_str) # This is an example number.
