@@ -1,9 +1,12 @@
 
 # example str 
 example_str = "This is an example string." 
+example_str_v2 = "This is an example string in an example sentence." 
 
 # replacing format 
     # creating a new variable to save the new str 
 changed_example_str = example_str.replace('string', 'number')
+changed_example_str_v2 = example_str_v2.replace('example', 'excellent')
 
 print(changed_example_str) # This is an example number.
+print(changed_example_str_v2)
