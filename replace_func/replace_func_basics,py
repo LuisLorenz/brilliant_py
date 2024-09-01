@@ -9,4 +9,6 @@ changed_example_str = example_str.replace('string', 'number')
 changed_example_str_v2 = example_str_v2.replace('example', 'excellent')
 
 print(changed_example_str) # This is an example number.
-print(changed_example_str_v2)
+print(changed_example_str_v2) # This is an excellent string in an excellent sentence.
+    # this shows that I every str that apears in my example_str is swapped out with my new substr 
+

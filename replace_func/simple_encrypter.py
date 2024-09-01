@@ -116,18 +116,54 @@ new_char = ['#', '*', '_']
 
 # 4) func for efficient encryption 
 
-combi_list = zip(old_char, new_char)
+# combi_list = zip(old_char, new_char)
 
-def encryption(str):
-    for x, y in combi_list:
-        str = str.replace(x, y)
-    return str 
+# def encryption(str):
+#     for x, y in combi_list:
+#         str = str.replace(x, y)
+#     return str 
 
-encrypted_str = encryption(my_str)
+# encrypted_str = encryption(my_str)
 
-print(encrypted_str) # Th_s _s # s*cr*t m*ss#g* th#t I w#nt to k**p pr_v#t*.
+# print(encrypted_str) # Th_s _s # s*cr*t m*ss#g* th#t I w#nt to k**p pr_v#t*.
 
 
 # 5) Update Combi_list 
     # by adding tuples afterwards ideally (best overview)
+
+# std_list = ['A', 'B']
+# std_list.append('C')
+# print(std_list)
+
+# a = ("John", "Charles", "Mike")
+# b = ("Jenny", "Christy", "Monica", "Vicky")
+
+# x = zip(a, b)
+
+# # here I have to convert the zip into an own list for using the append func 
+# x = list(zip(a, b))
+# x.append(('A', 'B'))
+
+# print(x)
+
+a = ['a', 'e', 'i']
+b = ['#', '*', '_']
+char_list = list(zip(a, b))
+
+def encryption(str):
+    for x, y in char_list:
+        str = str.replace(x, y)
+    return str 
+
+# char = input('Input the char that should be encrypted: ')
+# encryped_char = input(f'Input the encryption for the char {char}: ')
+
+# char_list.append((char, encryped_char))
+
+encrypted_str = encryption(my_str)
+
+print(encrypted_str)
+print(encryption(my_str))
+
+
 
